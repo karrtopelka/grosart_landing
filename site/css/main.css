@@ -1,0 +1,1157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+/* Main parameters */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA !important;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Background effect */
+
+section {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Background images for all sections */
+
+.main {
+    background-image: url("../images/background/main_bg.png");
+}
+
+.plintus {
+    background-image: url("../images/background/plintus_bg.jpg");
+}
+
+.zvsystem {
+    background-image: url("../images/background/zvsystem_bg.jpg");
+}
+
+.dddwall {
+    background-image: url("../images/background/3dwall_bg.jpg");
+}
+
+.prostodveri {
+    background-image: url("../images/background/prostodveri_bg.jpg");
+}
+
+.aqua-guard {
+    background-image: url("../images/background/aqua-guard_bg.jpg")
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Google Translate */
+.topnav {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 9999999999999 !important;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+}
+
+.topnav #myLinks label {
+    cursor: pointer;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 5px 6px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: rgba(221, 221, 221, 0.288);
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active_href {
+    display: none !important;
+}
+
+/* .language a {
+    display: none;
+}
+
+.language {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 9999;
+}
+
+.language__img {
+    margin: 2px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.language__img:hover,
+.language__img_active {
+    opacity: 1;
+} */
+.page_fix {
+    top: 0 !important;
+}
+
+.skiptranslate {
+    display: none !important;
+}
+
+/* End of Google Translate */
+
+/* ------------------------------------------------------------------------ */
+
+/* Scroll to top */
+
+#moveTo {
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border: none;
+}
+
+/* End of scroll to top */
+
+/*---------------------------------------------------------------------------*/
+
+/* For all texts */
+
+.texts {
+    color: #222222;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* For all logos */
+
+.logo {
+    width: 50%;
+}
+
+/* For all descriptions */
+
+.description {
+    text-align: center;
+    width: 60%;
+    font-size: 1.2em;
+}
+
+/* 35% width for description div */
+
+.w-35 {
+    width: 35%;
+}
+
+/* White text */
+
+.text-w {
+    color: white;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Particles JS */
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* End of Particles JS */
+
+/*---------------------------------------------------------------------------*/
+
+/* Social Icons animation */
+
+.btn {
+    display: inline-block !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    margin: 10px;
+    border-radius: 30% !important;
+    box-shadow: 0 5px 15px -5px #00000070 !important;
+    color: #ce171f !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.btn i {
+    line-height: 45px !important;
+    font-size: 24px !important;
+    transition: 0.2s linear !important;
+}
+
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #ce171f;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* End of Social Icons */
+
+/*---------------------------------------------------------------------------*/
+
+/*-------------------------------Main Section--------------------------------*/
+#main-info {
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+    text-align: center;
+}
+
+.main-img {
+    width: 100%;
+    text-align: center;
+}
+
+.main-img img {
+    width: 60%;
+}
+
+/* Anchor-menu */
+
+#menu li {
+    padding-top: 20px;
+    display: inline;
+}
+
+#menu>li>a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 15px 0;
+}
+
+#menu>li>a>img {
+    width: 15%;
+}
+
+.logo-dveri {
+    width: 10% !important;
+}
+
+/* End of Anchor-menu */
+
+/* Scroll effect */
+
+.mouse-icon {
+    position: absolute;
+    top: 92vh;
+    left: 50vw;
+    border: 2px solid #e7251f;
+    border-radius: 16px;
+    height: 40px;
+    width: 24px;
+    opacity: 0.7;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #939598;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+/* End of Scroll effect */
+
+/*-------------------------------Plintus Section------------------------------*/
+
+#plintus-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.logo-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plintus .btn {
+    color: #4c8bf5 !important;
+}
+
+.plintus .btn:before {
+    background: #4c8bf5;
+}
+
+/*-------------------------------ZVSYSTEM Section------------------------------*/
+
+#zvs-info {
+    text-align: center;
+}
+
+.zvsystem img {
+    width: 80%;
+}
+
+.zvsystem .logo-dev {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.zvsystem .texts {
+    font-size: 2.3em;
+}
+
+.zvsystem .description {
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.zvsystem .btn {
+    color: #004a8e !important;
+}
+
+.zvsystem .btn:before {
+    background: #004a8e;
+}
+
+/*-------------------------------3DWALL Section-------------------------------*/
+
+#dddwall-info {
+    text-align: center;
+    color: white;
+    margin-top: 7em;
+}
+
+.dddwall .btn {
+    color: #36b5ad !important;
+}
+
+.dddwall .btn:before {
+    background: #36b5ad;
+}
+
+/*----------------------------PROSTODVERI Section-----------------------------*/
+
+#prostodveri-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.prostodveri .btn {
+    color: black !important;
+}
+
+.prostodveri .btn:before {
+    background: black;
+}
+
+.prostodveri .col-3 {
+    display: none;
+}
+
+/*-----------------------------AQUA-GUARD Section-----------------------------*/
+
+#aqua-guard-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.aqua-guard-logo {
+    width: 60%;
+}
+
+/*-----------------------------CONTACT Section-------------------------------*/
+
+#contact-info {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    margin: 1.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#contact-info div {
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+#contact-info p a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(220, 20, 60, 0.3);
+    transition: 0.5s ease;
+}
+
+#contact-info p a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(220, 20, 60, 0.3);
+    color: rgb(220, 20, 60);
+}
+
+.logo-contact {
+    width: 15%;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*-------------------------------MEDIA QUERIES-------------------------------*/
+@media only screen and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    #moveTo {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .texts {
+        font-size: 2.1em;
+    }
+
+    /* exception on logo for zvsystem*/
+    .zvsystem .logo {
+        width: 75%;
+    }
+
+    .zvsystem .description {
+        width: 70%;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    /* exception on description for plintus and prostodveri and aqua-guard*/
+    .plintus .description,
+    .prostodveri .description,
+    .aqua-guard .description {
+        width: 85%;
+    }
+
+    #contact-info {
+        font-size: 1em;
+    }
+
+    .zvsystem {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .zvsystem {
+        background-image: url("../images/background/zvsystem_bg-1200.jpg");
+    }
+}
+
+@media only screen and (max-device-width: 1100px) {
+    #moveTo {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .texts {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 0.9em;
+        width: 50%;
+    }
+
+    .plintus .description,
+    .prostodveri .description,
+    .aqua-guard .description {
+        width: 90%;
+    }
+
+    #contact-info {
+        gap: 1.5em;
+        font-size: 0.95em;
+    }
+
+    .aqua-guard {
+        background-image: url("../images/background/aqua-guard_bg-1200.jpg");
+    }
+
+    .prostodveri .col:nth-child(2) {
+        display: none;
+    }
+
+    .prostodveri .description {
+        width: 60%;
+    }
+
+    .prostodveri #prostodveri-info {
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+    .plintus .col:nth-child(1) {
+        display: none;
+    }
+
+    .plintus #plintus-info {
+        margin-bottom: 5%;
+    }
+
+    .plintus .description {
+        width: 65%;
+    }
+
+    .prostodveri .col-4 {
+        display: none;
+    }
+
+    .prostodveri .description {
+        width: 60%;
+    }
+
+    .prostodveri #prostodveri-info {
+        margin-bottom: 5%;
+    }
+
+    .aqua-guard .col:nth-child(1) {
+        display: none;
+    }
+
+    .aqua-guard .description {
+        width: 60%;
+    }
+
+    #contact-info {
+        gap: 1em;
+        font-size: 1em;
+    }
+
+    #contact-info img {
+        width: 35%;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+    .main-info img {
+        width: 37.5em;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .zvsystem img {
+        width: 75% !important;
+    }
+
+    .zvsystem .description {
+        width: 80%;
+    }
+
+    .prostodveri img {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    .topnav a {
+        font-size: 16px;
+    }
+
+    .zvsystem #col-3 {
+        flex: 0 0 10%;
+    }
+
+    #zvs-info {
+        margin-top: 35%;
+    }
+
+    .zvsystem img {
+        width: 75% !important;
+    }
+
+    .zvsystem {
+        background-image: url("../images/background/zvsystem_bg-800.jpg");
+    }
+
+    .aqua-guard {
+        background-image: url("../images/background/aqua-guard-phone-bg.jpg");
+    }
+
+    .dddwall .description {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+    #moveTo {
+        right: 0;
+        bottom: 0;
+    }
+
+    .aqua-guard {
+        background-image: url("../images/background/aqua-guard-phone-bg.jpg");
+    }
+
+    .main-info {
+        width: 100%;
+        padding: 7%;
+    }
+
+    #menu {
+        padding-left: 0;
+        margin-top: 10%;
+        position: absolute;
+        left: 0;
+    }
+
+    #menu li a {
+        padding: 15px;
+    }
+
+    #menu>li>a>img {
+        width: 30%;
+    }
+
+    .logo-dveri {
+        width: 12% !important;
+    }
+
+    .main-info img {
+        width: 100%;
+    }
+
+    .main-info p {
+        font-size: 0.75em;
+    }
+
+    .mouse-icon {
+        display: none;
+    }
+
+    .texts {
+        font-size: 1.6em;
+    }
+
+    .logo {
+        width: 75%
+    }
+
+    .plintus .texts {
+        font-size: 1.4em;
+    }
+
+    .plintus .description {
+        width: 95%;
+    }
+
+    #dddwall-info {
+        margin-top: 55%;
+    }
+
+    .dddwall .description {
+        width: 90%;
+    }
+
+    .prostodveri img {
+        width: 90%;
+    }
+
+    .prostodveri .description {
+        width: 90%;
+    }
+
+    .aqua-guard img {
+        width: 85%;
+    }
+
+    .aqua-guard .description {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #plintus-info .description {
+        width: 60%;
+    }
+
+    .plintus img {
+        width: 45%;
+    }
+
+    .plintus #moveTo img,
+    .zvsystem #moveTo img,
+    .aqua-guard #moveTo img {
+        width: 100%;
+    }
+
+    .zvsystem .description {
+        width: 100%;
+    }
+
+    .prostodveri .description {
+        width: 50%;
+    }
+
+    .aqua-guard {
+        background-image: url("../images/background/aqua-guard_bg-1200.jpg");
+    }
+
+    .aqua-guard img {
+        width: 50%;
+    }
+
+    .dddwall .description {
+        font-size: 1.1em;
+        width: 80%;
+    }
+
+    #dddwall-info {
+        margin-top: 15%;
+    }
+
+    .prostodveri .col-3 {
+        display: inherit;
+    }
+
+    .prostodveri .logo-dev {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .prostodveri .description {
+        width: 100%;
+    }
+
+    .prostodveri .texts {
+        font-size: 1.7em;
+    }
+
+    .prostodveri img {
+        width: 80%;
+    }
+
+    .zvsystem .description {
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .topnav a {
+        font-size: 14px;
+    }
+
+    .topnav #myLinks {
+        width: 100%;
+    }
+    
+    #myLinks label {
+        display: flex;
+    }
+
+    #myLinks label img {
+        width: 24px;
+        height: auto;
+    }
+
+    #main-info {
+        margin-top: -20%;
+    }
+
+    #main img {
+        width: 60%;
+        padding-bottom: 1em;
+    }
+
+    #main-info p {
+        padding: 0 10px;
+        font-size: 0.7em;
+    }
+
+    #menu {
+        position: absolute;
+        top: 65%;
+        padding: 0 5%;
+    }
+
+    .plintus .logo-dev {
+        font-size: 0.85em;
+    }
+
+    #zvs-info {
+        margin-top: 50%;
+    }
+
+    .zvsystem #moveTo img {
+        width: 100%;
+    }
+
+    .zvsystem .logo-dev {
+        font-size: 0.7em;
+    }
+
+    .zvsystem .description {
+        width: 100%;
+    }
+
+    #dddwall-info {
+        margin-top: 10%;
+    }
+
+    .prostodveri .logo-dev {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .aqua-guard .texts {
+        font-size: 1.2em;
+    }
+
+    .aqua-guard .description {
+        width: 100%;
+    }
+
+    .aqua-guard img {
+        width: 80%;
+    }
+
+    #contact-info {
+        font-size: 0.9em !important;
+    }
+
+    #contact-info img {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #main-info {
+        margin-top: 10%;
+    }
+
+    #main-info img {
+        width: 50%;
+    }
+
+    #main-info p {
+        font-size: 0.7em;
+    }
+
+    #plintus-info {
+        margin-top: 25px;
+    }
+
+    .plintus img {
+        width: 40%;
+    }
+
+    .plintus .texts {
+        font-size: 1.2em;
+    }
+
+    .plintus .description {
+        font-size: 0.8em;
+    }
+
+    #zvs-info {
+        margin-top: 3em;
+    }
+
+    .zvsystem .texts {
+        font-size: 1.2em;
+    }
+
+    .zvsystem .col-3 {
+        flex: 0 0 20%;
+    }
+
+    .zvsystem .description {
+        font-size: 0.75em;
+        width: 100%;
+    }
+
+    .plintus #moveTo img,
+    .zvsystem #moveTo img,
+    .aqua-guard #moveTo img {
+        width: 100%;
+    }
+
+    #dddwall-info {
+        margin-top: 0;
+    }
+
+    .dddwall .texts {
+        font-size: 1.5em;
+    }
+
+    .dddwall .description {
+        width: 80%;
+    }
+
+    #prostodveri-info {
+        margin-top: 1em;
+    }
+
+    .prostodveri img {
+        width: 45%;
+    }
+
+    .prostodveri .texts {
+        font-size: 1.5em;
+    }
+
+    .prostodveri .description {
+        width: 90%;
+    }
+
+    .prostodveri .logo-dev {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .aqua-guard img {
+        width: 45%;
+    }
+
+    .aqua-guard .logo-dev {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .aqua-guard .texts {
+        font-size: 1.5em;
+    }
+
+    .aqua-guard .description {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #main-info {
+        margin-top: 1em;
+    }
+
+    .zvsystem .col-3 {
+        flex: 0 0 15%;
+    }
+
+    .prostodveri img {
+        width: 40%;
+    }
+
+    .prostodveri .col-3 {
+        display: inherit;
+        flex: 0 0 10%;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .btn {
+        width: 42px !important;
+        height: 42px !important;
+        margin: 5px;
+    }
+
+    .btn i {
+        line-height: 27px !important;
+        font-size: 18px !important;
+    }
+
+    #plintus-info {
+        margin-top: 0;
+    }
+
+    #plintus-info .description {
+        width: 90%;
+    }
+
+    .prostodveri img {
+        width: 40%;
+    }
+
+    .prostodveri .logo-dev {
+        padding-bottom: 0.5em;
+    }
+
+    .prostodveri .col-3,
+    .prostodveri .col-4 {
+        display: none;
+    }
+
+    .prostodveri .texts {
+        font-size: 1.7em;
+    }
+
+    .prostodveri .description {
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .aqua-guard img {
+        width: 45%;
+    }
+
+    .aqua-guard .description {
+        font-size: 0.8em;
+    }
+
+    .zvsystem .col-3 {
+        display: none;
+    }
+
+    .zvsystem img {
+        width: 50% !important;
+    }
+
+    .zvsystem .texts {
+        font-size: 1.7em;
+    }
+
+    .zvsystem .description {
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    .plintus .texts {
+        font-size: 1.7em;
+    }
+
+    .plintus .description {
+        font-size: 0.8em;
+        width: 90%;
+    }
+}
